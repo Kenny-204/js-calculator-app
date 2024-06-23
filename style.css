@@ -1,0 +1,73 @@
+/* 
+Table of Contents
+1. The calculators container ~ line 10
+2. The calculator screen i.e the display ~ line 22
+3. The calculators button group ~ line 38
+4. each individual button ~ line 48
+5. buttons transition ~ line 64
+*/
+
+/* The entire calculator's container */
+
+body{
+    background-color: rgb(223, 97, 97);
+}
+.container{
+   background-color: red;
+   color: white;
+   width: 20%;
+   height:480px;
+   border-radius: 20px;
+   position: absolute; 
+   top:100px;
+   left:40%;
+   font-size: 40px;
+}
+/* The calculator screen i.e the display */
+.screen{
+    width:83%;
+    position: absolute;
+    top:10px;
+    left:23px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: red;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+/* The calculators button group */
+.buttons{
+    position: relative;
+    top :100px;
+    left: 20px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    
+}
+
+/* each individual button */
+.buttons .item{
+    background-color: blue;
+    padding: 2px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    border: none;
+    margin: 5px 10px 5px 5px;
+    cursor: pointer;
+    transition-property: transform, background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+}
+
+/* buttons transition */
+.item:hover {
+    background-color: white;
+    color: red;
+    transform: translateY(-3px);
+  }
